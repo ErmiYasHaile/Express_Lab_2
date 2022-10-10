@@ -9,8 +9,8 @@ app.get('/greeting', (req, res)=>{
     res.send('Hello, strangers')
 })
 // Give the greetingroute a param /:name
- app.get('/greeting/:name',(req, res)=>{
-    res.send("What's up", + "  " + req.params.name)
+ app.get('/greeting/:Jimmy_boy',(req, res)=>{
+    res.send("What's up? " + "  " + req.params.Jimmy_boy + ' on the page')
  })
 
 app.listen(3000,()=>{
