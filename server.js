@@ -13,7 +13,15 @@ app.get('/greeting', (req, res)=>{
     res.send("Wow! Hello there, " + "  " + req.params.Jimmy_boy + " on the page")
  })
 
+ // Tip Calculator
+// Your app should have a route of '/tip'and it should
+// expect 2 params. One should be totaland one
+// should be tipPercentage
 
+app.get('/tip/:total/:tipPercentage',(req, res)=>{
+    let tip = parseInt(req.params.total) * (parseInt(req.params.tipPercentage) / 100)
+    res.send(`${tip}`+ " is the tip you will give.")
+})
 
 app.listen(3000,()=>{
     console.log(`listening on port 3000...`)
