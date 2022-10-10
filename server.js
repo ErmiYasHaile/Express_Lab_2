@@ -52,7 +52,7 @@ const magic8_quote = [
 
 app.get('/magic',(req, res)=>{
 
-    res.send("Enter a question in the URL space")
+    res.send("")
 })
 app.get("/magic/:whatever",(req, res)=>{
     let random = Math.floor( Math.random()*(magic8_quote.length))
