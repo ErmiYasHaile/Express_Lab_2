@@ -60,6 +60,11 @@ app.get("/magic/:whatever",(req, res)=>{
     res.send(req.params.whatever.replaceAll('%20 ',' ') + " " + `${magic8_quote[random]}`)
 })
 
+// Hungry for more?
+// Fibonacci
+app.get('/:fibonacci', (req, res)=>{
+    res.send()
+})
 
 
 app.listen(3000,()=>{
