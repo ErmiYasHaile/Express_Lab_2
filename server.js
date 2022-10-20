@@ -10,6 +10,7 @@ app.get('/greeting', (req, res)=>{
 })
 // Give the greetingroute a param /:name
 // Give the greetingroute a param /:name
+//you might find template literals `${} easier to use for string printouts`
  app.get('/greeting/:Jimmy_boy',(req, res)=>{
     res.send("Wow! Hello there, " + "  " + req.params.Jimmy_boy + " on the page")
  })
@@ -54,6 +55,8 @@ app.get('/magic',(req, res)=>{
 
     res.send("")
 })
+
+//perfect use of the Math.random()
 app.get("/magic/:whatever",(req, res)=>{
     let random = Math.floor( Math.random()*(magic8_quote.length))
     console.log(random)
